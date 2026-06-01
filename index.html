@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Birthday Surprise</title>
+<style>
+body{
+    background:#ffe6f0;
+    font-family:Arial,sans-serif;
+    text-align:center;
+    padding-top:150px;
+}
+
+.box{
+    background:white;
+    width:300px;
+    margin:auto;
+    padding:25px;
+    border-radius:15px;
+}
+
+input{
+    padding:10px;
+    width:80%;
+    margin:10px;
+}
+
+button{
+    padding:10px 20px;
+}
+</style>
+
+</head>
+<body>
+
+<div class="box">
+    <h2>🔒 Birthday Surprise</h2>
+    <p>Enter your DOB to unlock</p>
+
+    <input type="password" id="password" placeholder="DDMMYYYY">
+
+    <br>
+
+    <button onclick="checkAccess()">Unlock ✨</button>
+
+    <p id="msg"></p>
+</div>
+
+<script>
+function checkAccess(){
+
+    if(document.getElementById("password").value === "01062008"){
+        document.body.innerHTML = `
+<div style="padding:40px;text-align:center;">
+<h1>🎂 Happy Birthday Aastha 🎂</h1>
+
+<h2>💖 Welcome to your special surprise 💖</h2>
+
+<p>
+This is made especially for you.
+</p>
+
+</div>
+`;
+      function showMomentsPage(){
+
+document.body.innerHTML = `
+
+<div style="
+background:linear-gradient(135deg,#0f0f0f,#1e1e1e);
+color:white;
+padding:30px;
+font-family:Arial,sans-serif;
+line-height:1.8;
+min-height:100vh;
+">
+
+<h1 style="
+text-align:center;
+color:#ffd700;
+font-size:45px;
+">
+✨ Things That Make You Special ✨
+</h1>
+
+<br>
+
+<div style="background:#181818;padding:20px;border-radius:20px;margin-bottom:20px;">
+<h2 style="color:#ffd700;">✨ MOMENT 01 — THAT RADIANT SMILE</h2>
+<p>
+Aastha, your smile can instantly make everything soo enjoyable and betterr.
+</p>
+</div>
+
+<div style="background:#181818;padding:20px;border-radius:20px;margin-bottom:20px;">
+<h2 style="color:#ffd700;">✨ MOMENT 02 — UNMATCHED VIBE</h2>
+<p>
+There is something about your presence that feels calm and special.
+</p>
+</div>
+
+<div style="background:#181818;padding:20px;border-radius:20px;margin-bottom:20px;">
+<h2 style="color:#ffd700;">✨ MOMENT 03 — SO INCREDIBLY KIND</h2>
+<p>
+The care you show to the people around you, how soft-hearted you aree.
+</p>
+</div>
+
+<div style="background:#181818;padding:20px;border-radius:20px;margin-bottom:20px;">
+<h2 style="color:#ffd700;">✨ MOMENT 04 — ONE IN A MILLION</h2>
+<p>
+There is literallyyy no one likee youuu.
+</p>
+</div>
+
+<br><br>
+
+<div style="text-align:center;">
+
+<button onclick="showWishPage()" style="
+padding:15px 30px;
+font-size:18px;
+background:#ffd700;
+border:none;
+border-radius:12px;
+cursor:pointer;
+">
+💌 Open Birthday Letter
+</button>
+
+</div>
+
+</div>
+
+`;
+      function showWishPage() {
+    // Ye function button click hote hi chalega aur purane content ko hata kar letter dikha dega
+    document.body.innerHTML = `
+        <div style="
+            max-width: 600px; 
+            margin: 40px auto; 
+            padding: 35px 25px; 
+            background: #fffdf6; 
+            border-radius: 20px; 
+            box-shadow: 0 10px 30px rgba(0,0,0,0.15); 
+            font-family: 'Georgia', serif; 
+            color: #333333; 
+            line-height: 1.8;
+            border: 2px solid #ffd700;
+        ">
+            <!-- Top Decorative Emojis -->
+            <div style="text-align: center; font-size: 40px; margin-bottom: 15px;">
+                ✨🎂✨
+            </div>
+
+            <h1 style="
+                text-align: center; 
+                color: #b38600; 
+                font-family: 'Arial', sans-serif; 
+                margin-bottom: 30px;
+                font-size: 28px;
+            ">
+                A Special Note For You
+            </h1>
+
+            <!-- Aapka Personal Note -->
+            <div style="
+                font-size: 17px; 
+                white-space: pre-line; 
+                padding: 0 15px;
+                text-align: left;
+            ">
+                Once again a veryy happy birthdayyy jii , even though i wished you I still wanted to make this small special note just for you.
+
+                You are one of the most important and special people in my life, and I genuinely feel lucky to have you as my best friend. 💛
+
+                There are very few people with whom you can just be yourself without thinking twice and you are definitely one of them. Talking to you, sharing random moments, and just having you around makes everything amazing.
+
+                On your special day I just want you to know that you truly deserve all the happiness, peace and success in the world. May this year bring you closer to your dreams and fill your life with beautiful memories. 🎂✨
+
+                No matter how life changes, I hope we always stay connected like this. Stay the same amazing, kind, and strong person you are. 💖
+
+                Have an amazing birthday once again… this is just a small effort to make your day a little more special :) 🎉
+            </div>
+
+            <!-- Bottom Decorative Line -->
+            <div style="
+                text-align: center; 
+                margin-top: 40px; 
+                font-size: 14px; 
+                color: #888888; 
+                border-top: 1px dashed #ffd700; 
+                padding-top: 20px;
+                font-family: 'Arial', sans-serif;
+            ">
+                Made with ❤️ just for you
+            </div>
+        </div>
+    `;
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+}
