@@ -47,20 +47,23 @@ button{
 
 <script>
 function checkAccess(){
-
     if(document.getElementById("password").value === "01062008"){
         document.body.innerHTML = `
 <div style="padding:40px;text-align:center;">
 <h1>🎂 Happy Birthday Aastha 🎂</h1>
-
 <h2>💖 Welcome to your special surprise 💖</h2>
-
-<p>
-This is made especially for you.
-</p>
-
+<p>This is made especially for you.</p>
+<br>
+<button onclick="showMomentsPage()" style="padding:12px 25px; font-size:16px; background:#ffccd5; color:#b30047; border:none; border-radius:20px; cursor:pointer; font-weight:bold;">
+    See Special Moments ✨
+</button>
 </div>
 `;
+    } else {
+        alert("Wrong DOB! Please try again. 🤔");
+    }
+}
+
       function showMomentsPage(){
 
 document.body.innerHTML = `
